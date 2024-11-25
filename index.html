@@ -4,82 +4,118 @@
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <title>UENID_FLORES</title>
-<style>
+    <link rel="stylesheet" href="estilo.css">
 
-body{
-font-family: sans-serif;
-margin: 0;
-}
-
-
-header{
- display: flex;
- min-height: 70px;
- background-color: coral; 
- justify-content: space-between;
-align-items: center;
-padding: 10px;
-}
-
-.logo-nombre{
- display: flex;
- align-items: center;
-
-}
-
-.logo-nombre img{
-height: 50px;
-margin-right: 10px;
-}
-
-nav a{
-    font-weight: 600;
-    padding-right: 10px;
-}
-
-nav a:hover{
-    color:blanchedalmond;
-}
-
-@media (max-width:700px){
-header{
-    flex-direction: column;
-}
-
-nav{
-    padding: 10px 0px;
-}
-
-}
-
-
-
-
-</style>
 
 </head>
 <body>
 
 <header>
-<div class="logo-nombre">
-    <img src="F:\DISEÑO Y DESARROLLO WEB\proyecto colegio\fotos\NID_logo.png" alt="escudo uenid">
-  <h1 class="nombre-colegio"> UNIDAD EDUCATIVA "NICOLAS INFANTE DIAZ"</h1>
+    <div class="header_superior">
+    <div class="logo-nombre">
+      <img src="D:\lawlietnote.github.io\proyecto colegio\fotos\NID_logo.png " alt="escudo uenid">
+    </div>
 
+      <div class="titulo">
+      <p><h1 class="nombre-colegio"> UNIDAD EDUCATIVA "NICOLAS INFANTE DIAZ"</p></h1>
+      </div>
+      
 </div>
 
+<div class="contenedor__menu">
+ <div class="menu">
 <nav>
-<a href"#INICIO" class"nav-link"> INICIO </a>
-<a href"" class"nav-link"> SOBRE EL AUTOR </a>
-<a href"" class"nav-link"> NUESTRA HISTORIA </a>
-<a href"" class"nav-link"> JUBILADOS </a>
+<ul>
+<li> <a href="#INICIO" > INICIO </a></li>
+<li> <a href="#" > SOBRE EL AUTOR </a> </li>
+<li> <a href="#" > NUESTRA HISTORIA </a></li>
+<li> <a href="#" > JUBILADOS </a>
+    <ul>
+        <li><a href="#">RECTORES</a></li>
+        <li><a href="#">DOCENTES</a></li>
+        <!-- <li><a href="#"></a></li> -->
+        <!-- <li><a href="#"></a></li> -->
+        <!-- <li><a href="#"></a></li> -->
+    </ul>
+  </li>
+  </ul>
+ </nav>
+  </div>
+</div>
 
-
-</nav>
 </header>
 
 
+<section class="instalar">
+  <h2>Renovar es vivir <br>Con los Mejores</h2>
+  <button> CONOCE NUESTRAS INSTALACIONES!</button>
+</section>
 
-    <main>
+
+<section id="historia ">
+  <div class="contenedor">
+  
+  <div class="img-container">
+    <h2>CONOCE NUESTRA HISTORIA</h2>
+    <p> El legendario colegio Nacional Nicolás Infante Díaz 
+      se creó el 11 de junio de 1956, siendo el primer 
+      establecimiento secundario de Quevedo.</p>
+      <p>Se inició con 12 señoritas y siete varones...</p>
+  </div>
+</div>
+</section>
+
+<section id="jubilados">
+  <div class="contenedor">
+  <h2>NUESTRO JUBILADOS</h2>
+  <div class="carta">
+    <h3>Ex rectores</h3>
+    <p>Administra el personal asignado a su institución en lo relacionado con las novedades y los permisos.</p>
+    <form action="#"> <button> + Info</button> </form>
+  </div>
+
+  <div class="carta">
+    <h3>Ex Docentes</h3>
+    <p>La función docente es aquella de carácter profesional que implica la realización directa de los procesos sistemáticos de enseñanza</p>
+    <form action="#"> <button>+ Info</button> </form>
+  </div>
+
+  <div class="carta">
+    <h3>Ex </h3>
+    <p></p>
+    <form action="#"> <button>+ Info</button> </form>
+  </div>
+</div>
+</section>
+
+<selection id="vision_vision">
+  <div class="contenedor">
+  <div class="vision">
+    <h3>VISION</h3>
+    <p>La Unidad Educativa “Nicolás Infante Díaz” será una entidad formadora de jóvenes solidarios</p>
+    <p>con una cultura de paz y autonomía para construir conocimientos teóricos prácticos,</p>
+    <p>fundamentados en el desarrollo científico-tecnológico, con perfil de ciudadanos conscientes</p>
+    <p>de valores, derechos humanos y de la naturaleza que aportarán a la solución de los</p>
+    <p>problemas socio económico del país y del mundo.</p>
+  </div>
+
+  <div class="mision">
+    <h3>MISION</h3>
+    <p>Formar estudiantes con principios, valores y conocimientos de excelencia; fomentando el</p>
+    <p>cuidado del ambiente, la salud y la prevención de riesgos, liderando procesos de desarrollo</p>
+    <p>científicos y tecnológicos que permitan la transformación de una sociedad justa, solidaria e</p>
+    <p>inclusiva que contribuyan al buen vivir.</p>
+  </div>
+
+</div>
+</selection>
+<footer>
+  <div class="copi">
+    <p><a href="https://www.instagram.com/adrian_mora19/profilecard/?igsh=MTc2dm43dHczdmJxZA==" target="_blank"> @ADRIAN_MORA19</a></p>
+  </div>
+</footer>
+
+
         <h4><strong><em> Autor: luis Adrian Flores Mora</em></strong></h4>
   
     <!-- este es el primer menu-->
@@ -97,9 +133,7 @@ nav{
     <p>Manuel Quintana Miranda, Gilberto Montes Véliz, Sergio Peña, Dora de Peña, Lady Esteves, Elisa Marín de Jalón y el Filántropo Don Camilo Arévalo Govea.</p>
     <p> Se inició con 12 señoritas y siete varones, después se matricularon más estudiantes en el Normal Rural Municipal. El Dr. Carlos Julio Emanuel expresó en el Congreso que lleve el nombre del ilustre palenqueño: Coronel Nicolás </p>
     <p>Infante Díaz.Todos los años los profesores y estudiantes se trasladaban a Palenque para rendir homenaje al Patrono de la Institución..</p>
-</center>
-
-    </main>
+</center> 
     <a href="" target="_blank" rel="noopener noreferrer">  </a>
 
 
