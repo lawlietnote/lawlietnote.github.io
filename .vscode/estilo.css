@@ -1,0 +1,215 @@
+/* como crear una pagina web completa con html y css */
+
+body{
+    background-color:antiquewhite;
+    margin: 0;
+}
+
+h1{ font-size: 3.0em;}
+h2{ font-size: 2.7em}
+h3{font-size:2em}
+p{font-size:1.25em}
+
+html{
+
+    scroll-behavior: smooth;
+}
+button{
+    font-size: 1.5em;
+    font-weight: bold;
+    padding: 10px 30px;
+    border-radius: 10px; 
+    border: 1px solid rgba(0,0,0,0.5);
+    box-shadow: 2px 2px 10px rgba(0,0,0,0.5);
+    color: white;
+    background-color:#5ac331;
+}
+button:hover{
+    background-color: #06a711;
+
+}
+
+.color-acento{ color:black}
+
+.contenedor{
+    max-width: 1400px;
+    margin:auto;
+}
+
+#instalar{
+    display: flex;
+    align-items:center;
+    justify-content:center;
+    text-align:center;
+    flex-direction:column;
+    height:90vh;
+    color:aliceblue;
+    background-image:  linear-gradient(
+     0deg,
+     rgba(0,0,0,0.5),
+     rgba(0,0,0,0.5)     
+    )
+    ,url("instalaciones.png");
+    background-repeat: no-repeat;
+    background-size: cover;
+    background-position: center center;
+}
+
+#instalar h2{
+    color: white;
+}
+
+#historia{
+
+}
+
+#historia .contenedor{
+text-align: center;
+padding: 200px 12px;
+}
+
+#jubilados{
+    background-color: rgba(242, 106, 79, 0.994);
+    color:white;
+    text-align: center;
+}
+#jubilados .contenedor{
+    padding: 100px 0px;
+}
+
+#jubilados .h2{
+    margin-top: 0;
+    }
+
+#jubilados .p{
+display: none;
+}
+
+#jubilados .carta{
+    
+
+}
+
+.carta:first-child{
+    background-image: linear-gradient(
+        0deg,
+        rgba(0,0,0,0.5),
+        rgba(0,0,0,0.5)     
+       )
+       ,url("manuel_quintana.jpg");;
+
+}
+
+.carta:first-child(2){
+
+
+}
+
+.carta:first-child(3){
+
+
+}
+
+/* como hacer menu despegable con puro html y css */
+*{
+    margin:0;
+    padding: 0;
+    box-sizing: border-box;
+    font-family:'Source Sans 3', sans-serif;
+    text-decoration: none;
+}
+
+/* header inferior */
+        
+    header{
+     display: flex-;
+     top:0;
+     left: 0;
+     background-color: rgb(255, 0, 0); 
+     justify-content: space-between;
+     align-items:flex-end;
+     padding: 5px;
+    }
+ /* header superior */
+
+    .header_superior{
+        
+        max-width: 1200px;
+        margin: auto;
+        justify-content: space-between;
+        padding: 20px;
+        display: flex;
+       
+       }
+
+       /* logo */
+       .logo-nombre img{
+        width: 150px;
+        padding: 10px;
+      
+        }
+
+        .titulo{
+            width: auto;
+           
+        }
+
+ /* barra menu  */
+/* cambio todo aqui */
+ .contenedor__menu{
+    width:100%;
+    height: 70px;
+    background: #ffffffe0 ;
+    padding: 0px 20px; 
+
+ }
+
+ .menu{
+    max-width: 1200px;
+    margin:auto;
+    height:100%;
+    }
+   
+    nav{
+       height:100%;
+       
+   }
+       
+       nav >ul{
+           height:100%;
+           display: flex;
+           font-weight: 600;
+           padding-right: 10px;
+       }
+       nav> ul>li{
+           height: 100%;
+           list-style: none;
+           position: relative;
+       }
+   
+       nav> ul>li> a{
+           width: 100%;
+           height: 100%;
+           display: flex;
+           align-items: center;
+           padding:14px;
+           color: rgb(0, 0, 0);
+           text-transform: uppercase;
+           font-size: 14px;
+           transition: all 300ms ease;
+       }
+       
+       nav > ul>li>a:hover{
+           transform: scale(1.1);
+           background: #08b213;
+           box-shadow: 0px 0px 10px 0px rgba(0,0,0,0.5);
+       }
+       
+       @media (max-width:700px){
+        header{
+            flex-direction: column;
+        }
+       
+       
+       
+       }
