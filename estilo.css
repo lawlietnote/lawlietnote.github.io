@@ -97,16 +97,35 @@ display: none;
         rgba(0,0,0,0.5),
         rgba(0,0,0,0.5)     
        )
-       ,url("manuel_quintana.jpg");;
+       ,url("manuel_quintana.jpg");
+       background-position: center center ;
+       background-size: cover;
 
 }
 
-.carta:first-child(2){
+.carta:nth-child(2){
+    background-image: linear-gradient(
+        0deg,
+        rgba(0,0,0,0.5),
+        rgba(0,0,0,0.5)     
+       )
+       ,url("manuel_quintana.jpg");
+    background-position: center center ;
+    background-size: cover;
 
 
 }
 
-.carta:first-child(3){
+.carta:nth-child(3){
+    background-image: linear-gradient(
+        0deg,
+        rgba(0,0,0,0.5),
+        rgba(0,0,0,0.5)     
+       )
+       ,url("manuel_quintana.jpg");
+       background-position: center center ;
+       background-size: cover;
+
 
 
 }
@@ -133,27 +152,28 @@ display: none;
     }
  /* header superior */
 
-    .header_superior{
+ .header_superior{
         
-        max-width: 1200px;
-        margin: auto;
-        justify-content: space-between;
-        padding: 20px;
-        display: flex;
+    max-width: 1200px;
+    padding: 20px;
+    display: flex;
+
+   
+   }
+
+   /* logo */
+   .logo-nombre img{
+    width: 150px;
+    padding: 10px;
+    
+}
+
+.titulo{
+        justify-content:center center;
+        width: auto;
+        margin:auto;
        
-       }
-
-       /* logo */
-       .logo-nombre img{
-        width: 150px;
-        padding: 10px;
-      
-        }
-
-        .titulo{
-            width: auto;
-           
-        }
+    }
 
  /* barra menu  */
 /* cambio todo aqui */
