@@ -155,6 +155,28 @@ display: none;
     text-decoration: none;
 }
 
+
+
+#final
+{
+    background-image: linear-gradient(
+        0deg,
+        rgba(0,0,0,0.5),
+        rgba(0,0,0,0.5)     
+       )
+       ,url("manuel_quintana.jpg");
+       background-position: center center ;
+       background-size: cover;
+    padding:0%;
+    display: flex;
+
+}
+
+.hr 
+{
+    border-color: black;
+    background-color: black;
+}
 /* header inferior */
         
     header{
