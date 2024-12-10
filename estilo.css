@@ -199,33 +199,40 @@ footer .contenedor{
      top:0;
      left: 0;
      background-color: rgb(255, 0, 0); 
-     justify-content: center;
-     align-items:center;
      padding: 5px;
      
     }
  /* header superior */
-
  .header_superior{
         
     max-width: 1300px;
     padding: 5px;
     display: flex;
-
    
    }
 
+
    /* logo */
    .logo-nombre img{
-    width: 150px;
-    padding: 10px;
+    width: 130px;
+    padding: 5px;
+    justify-content:flex-end ;
     
 }
 
+.face{
+    width: 50px;
+    padding: 5px;
+
+}
+
 .titulo{
-        justify-content:center center;
+        justify-content:center;
         width: auto;
+        height: auto;
         margin:auto;
+        align-items:center;
+        
        
     }
 
