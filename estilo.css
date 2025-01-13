@@ -325,12 +325,16 @@ nav >ul{
   .container_carousel .swiper-slide img{
       display: block;
       width: 100%;
-      height: 180px;
-      object-fit: cover;
+      height: 200px;
+      object-fit:fill;
       border-top-left-radius: 15px;
       border-top-right-radius: 15px;
-      
+      overflow: hidden;
+      background-size: cover;
+     
   }
+
+  
   .container_carousel .swiper-slide .card-description{
       padding:1rem 1rem;
   }
