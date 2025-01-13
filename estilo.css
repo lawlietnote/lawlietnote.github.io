@@ -68,89 +68,86 @@ text-align: center;
 padding: 200px 12px;
 }
 
-#jubilados{
-    background-color: rgba(242, 106, 79, 0.994);
-    color:white;
+
+/* cuadros de textos */
+
+#nuestros-programas{
+    background-color: rgb(196, 118, 118);
+    color: rgb(14, 5, 5);
     text-align: center;
 }
-#jubilados .contenedor{
-    padding: 100px 0px;
-}
 
-#jubilados .h2{
+
+#nuestros-programas h2{
     margin-top: 0;
     font-size: 3.2em;
-    }
-
-#jubilados .p{
-display: none;
 }
 
-#jubilados .carta{
-    background-position: center center;
+.container_actuales {
+    display:grid;
+    grid-template-columns: repeat(auto-fit, minmax(200px, 1fr));
+    gap: 20px;
+    width: 90%;
+    max-width: 1800px;
+    padding: 100px 50px;
+
+  }
+  
+  .card {
+    position: relative;
+    height: 200px;
+    border-radius: 10px;
+    overflow: hidden;
     background-size: cover;
-    padding: 50px 0px;
-    margin: 30px;
-   border-radius:15px; 
-   flex-direction: column;
-
-}
-
-.carta:first-child{
-    background-image: linear-gradient(
-        0deg,
-        rgba(0,0,0,0.5),
-        rgba(0,0,0,0.5)     
-       )
-       ,url("manuel_quintana.jpg");
-       background-position: center center ;
-       background-size: cover;
-
-}
-
-.carta:nth-child(2){
-    background-image: linear-gradient(
-        0deg,
-        rgba(0,0,0,0.5),
-        rgba(0,0,0,0.5)     
-       )
-       ,url("manuel_quintana.jpg");
-    background-position: center center ;
-    background-size: cover;
-
-
-}
-
-.carta:nth-child(3){
-    background-image: linear-gradient(
-        0deg,
-        rgba(0,0,0,0.5),
-        rgba(0,0,0,0.5)     
-       )
-       ,url("manuel_quintana.jpg");
-       background-position: center center ;
-       background-size: cover;
-
-
-
-}
-
-#final
-{
+    background-position: center;
     display: flex;
-    flex-direction:column;
+    justify-content: center;
     align-items: center;
-    text-align:center;
-    background-color: rgb(30, 30, 30);
+    box-shadow: 0 4px 6px rgba(0, 0, 0, 0.1);
+    transition: transform 0.3s ease, box-shadow 0.3s ease; /* Añade una transición suave */
+  }
+  
+  .card .text {
+    position: absolute;
+    bottom: 10px;
+    background-color: rgba(0, 0, 0, 0.5);
     color: white;
-    height: 80vh;
-    padding: 20px;
+    font-size: 1.2em;
+    padding: 5px 10px;
+    border-radius: 5px;
+    text-align: center;
+    width: calc(100% - 20px);
+  }
+  
+  @media (max-width: 768px) {
+    .card {
+      height: 150px;
+    }
+  
+    .card .text {
+      font-size: 1em;
+    }
+  }
+  
+  @media (max-width: 480px) {
+    .card {
+      height: 120px;
+    }
+  
+    .card .text {
+      font-size: 0.9em;
+    }
+  }
 
-}
+  .card:hover {
+    transform: scale(1.05); /* Aumenta ligeramente el tamaño */
+    box-shadow: 0 6px 12px rgba(0, 0, 0, 0.2); /* Aumenta la sombra */
+    transition: transform 0.3s ease, box-shadow 0.3s ease; /* Suaviza la transición */
+  }
 
-#final h2{
-font-size: 9vw;
-}
+/* no se de que sea esto */
+
+
 footer{
     background-color: rgb(230,230,230);
 }
@@ -163,7 +160,7 @@ footer .contenedor{
     display: flex;
     justify-content: center;
     align-items: flex-end;
-
+    
 }
 
 @media (min-width:700px){
@@ -177,10 +174,10 @@ footer .contenedor{
         display: flex;
         box-sizing: border-box;
         -webkit-box-sizing: border-box ;
-         
+        
     }
-
-
+    
+    
 }
 
 /* como hacer menu despegable con puro html y css */
@@ -193,8 +190,8 @@ footer .contenedor{
 }
 
 /* header inferior */
-        
-    header{
+
+header{
      display: flex;
      top:0;
      left: 0;
@@ -202,18 +199,18 @@ footer .contenedor{
      padding: 5px;
      
     }
- /* header superior */
- .header_superior{
+    /* header superior */
+    .header_superior{
         
     max-width: 1300px;
     padding: 5px;
     display: flex;
-   
-   }
+    
+}
 
 
-   /* logo */
-   .logo-nombre img{
+/* logo */
+.logo-nombre img{
     width: 130px;
     padding: 5px;
     justify-content:flex-end ;
@@ -223,144 +220,207 @@ footer .contenedor{
 .face{
     width: 50px;
     padding: 5px;
-
+    
 }
 
 .titulo{
-        justify-content:center;
-        width: auto;
-        height: auto;
+    justify-content:center;
+    width: auto;
+    height: auto;
         margin:auto;
         align-items:center;
         
-       
+        
     }
-
- /* barra menu  */
-/* cambio todo aqui */
- .contenedor__menu{
-    width:100%;
-    height: 70px;
-    background: #ffffffe0 ;
-    padding: 0px 20px; 
-
- }
-
- .menuu{
+    
+    /* barra menu  */
+    /* cambio todo aqui */
+    .contenedor__menu{
+        width:100%;
+        height: 70px;
+        background: #ffffffe0 ;
+        padding: 0px 20px; 
+        
+    }
+    
+    .menuu{
     max-width: 1200px;
     margin:auto;
     height:100%;
-    }
-   
-    nav{
-       height:100%;
-       
-   }
-       
-       nav >ul{
-           height:100%;
-           display: flex;
-           font-weight: 600;
+}
+
+nav{
+    height:100%;
+    
+}
+
+nav >ul{
+    height:100%;
+    display: flex;
+    font-weight: 600;
            padding-right: 10px;
        }
        nav> ul>li{
            height: 100%;
            list-style: none;
            position: relative;
-       }
+        }
+        
+        nav> ul>li> a{
+            width: 100%;
+            height: 100%;
+            display: flex;
+            align-items: center;
+            padding:14px;
+            color: rgb(24, 7, 7);
+            text-transform: uppercase;
+            font-size: 14px;
+            transition: all 300ms ease;
+        }
+        
+        nav > ul>li>a:hover{
+            transform: scale(1.1);
+            background: #08b213;
+            box-shadow: 0px 0px 10px 0px rgba(0,0,0,0.5);
+        }
+        
+        /* como agregar un carrusel de imagenes en tu pagina */
+        /* --- --- CONTENEDOR PRINCIPAL --- --- */
+
+#nuestros_jubiladoss{
+    padding: 0%;
+    color: rgb(0, 0, 0);
+    text-align: center;
+}
+.container_carousel{
+    background: #ffffff;
+    width: 90%;
+    padding: 10px 40px;
+    
+}
+
+.container_carousel h2{
+    margin-top: 0;
+    font-size: 3.2em;
+    align-items: center;
+    justify-content: center;
+}
+
+.container_carousel .swiper-container{
+    width: 100%;
+    height: 100%;
+    padding: 50px 100px;
+}
+.container_carousel .swiper-slide {
+    position: relative;
+    text-align: center;
+    font-size: 18px;
+    background: #fff;
+    border-radius: 15px;
+    text-align: start;
+    box-shadow: 0px 4px 4px rgba(196, 196, 196, 0.25);
    
-       nav> ul>li> a{
-           width: 100%;
-           height: 100%;
-           display: flex;
-           align-items: center;
-           padding:14px;
-           color: rgb(24, 7, 7);
-           text-transform: uppercase;
-           font-size: 14px;
-           transition: all 300ms ease;
-       }
-       
-       nav > ul>li>a:hover{
-           transform: scale(1.1);
-           background: #08b213;
-           box-shadow: 0px 0px 10px 0px rgba(0,0,0,0.5);
-       }
-
-       /* como agregar un carrusel de imagenes en tu pagina */
-
-       .dual-carousel-section {
-        display: flex;
-        justify-content: space-between;
-        width: 90%;
-        max-width: 1200px;
-        gap: 20px;
-      }
+}
+  .container_carousel .swiper-slide img{
+      display: block;
+      width: 100%;
+      height: 180px;
+      object-fit: cover;
+      border-top-left-radius: 15px;
+      border-top-right-radius: 15px;
       
-      .carousel-container {
-        flex: 1;
-        max-width: 50%;
-      }
-      
-      .carousel {
-        position: relative;
-        overflow: hidden;
-        background: #fff;
-        border: 1px solid #ccc;
-        border-radius: 8px;
-        box-shadow: 0 4px 8px rgba(0, 0, 0, 0.1);
-      }
-      
-      .carousel-track-container {
-        overflow: hidden;
-        position: relative;
-      }
-      
-      .carousel-track {
-        display: flex;
-        transition: transform 0.5s ease-in-out;
-      }
-      
-      .carousel-slide {
-        min-width: 400px; /* Ajusta el tamaño de las imágenes */
-        list-style: none;
+  }
+  .container_carousel .swiper-slide .card-description{
+      padding:1rem 1rem;
+  }
+  .container_carousel .swiper-slide .card-title,.container .swiper-slide .card-text{
+      margin-bottom: .5rem;
+    }
+    .container_carousel .swiper-slide .card-link{
         text-align: center;
-      }
-      
-      .carousel-image img {
-        display: block;
+        
+    }
+    .container_carousel .swiper-slide .card-link a{
+        text-decoration: none;
+      color: #1d6ce2;
+    }
+    .swiper-button-next{
+        right: 26px !important;
+    }
+    .swiper-button-prev{
+        left: 26px !important;
+    }
+
+    
+	/* // audio del colegio */
+   
+    .himno-container {
+        background: #ffffff;
+        padding: 20px;
+        border-radius: 10px;
+        box-shadow: 0 4px 6px rgba(0, 0, 0, 0.1);
+        text-align: center;
         width: 100%;
-        height: 450px;
-      }
-      
-      .carousel-text {
-        margin-top: 10px;
-        font-size: 1rem;
+        max-width: 2800px;
+        margin: auto;
+    }
+    
+    .himno-container .logo {
+        width: 100px;
+        height: auto;
+        margin-bottom: 20px;
+    }
+    
+    .himno-container h1 {
+        font-size: 24px;
+        font-weight: bold;
         color: #333;
-      }
-      
-      .carousel-button {
-        position: absolute;
-        top: 50%;
-        transform: translateY(-50%);
-        background: rgba(0, 0, 0, 0.5);
-        border: none;
+        margin-bottom: 10px;
+    }
+    
+    .himno-container h2 {
+        font-size: 20px;
+        color: #555;
+        margin-bottom: 10px;
+    }
+    
+    .himno-container p {
+        font-size: 16px;
+        color: #333;
+        line-height: 1.5;
+        margin-bottom: 20px;
+    }
+    
+    .himno-container audio {
+        width: 100%;
+        margin-top: 20px;
+    }
+    
+    /* video sobre mi */
+    #final
+    {
+        display: flex;
+        flex-direction:column;
+        align-items: center;
+        text-align:center;
+        background-color: rgb(30, 30, 30);
         color: white;
-        font-size: 1.5rem;
-        cursor: pointer;
-        z-index: 10;
-        padding: 10px;
+
+        padding: 20px;
+    }
+    
+   
+    .video-container {
+        padding: 70px 10px;
+        position: relative;
+        width: 100%;
+        max-width: 800px; /* Ancho máximo para evitar que sea demasiado grande */
+        overflow: hidden;
       }
       
-      .carousel-button-left {
-        left: 10px;
+      video {
+        width: 800px; /* El video ocupa todo el ancho del contenedor */
+        height: 600px; /* Mantiene la proporción del video */
+        border-radius: 8px; /* Bordes redondeados opcionales */
+        box-shadow: 0 4px 6px rgba(0, 0, 0, 0.1); /* Sombra para darle estilo */
       }
-      
-      .carousel-button-right {
-        right: 10px;
-      }
-      
-      .carousel-button:focus {
-        outline: none;
-      }
-      

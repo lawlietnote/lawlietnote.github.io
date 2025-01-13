@@ -1,41 +1,34 @@
+var swiper = new Swiper('.swiper-container', {
+	navigation: {
+	  nextEl: '.swiper-button-next',
+	  prevEl: '.swiper-button-prev'
+	},
+	slidesPerView: 1,
+	spaceBetween: 10,
+	// init: false,
+	pagination: {
+	  el: '.swiper-pagination',
+	  clickable: true,
+	},
 
-// Selecciona todos los carruseles en la página
-const carousels = document.querySelectorAll('.carousel');
+  
+	breakpoints: {
+	  620: {
+		slidesPerView: 1,
+		spaceBetween: 20,
+	  },
+	  680: {
+		slidesPerView: 2,
+		spaceBetween: 40,
+	  },
+	  920: {
+		slidesPerView: 3,
+		spaceBetween: 40,
+	  },
+	  1240: {
+		slidesPerView: 4,
+		spaceBetween: 50,
+	  },
+	} 
+    });
 
-carousels.forEach((carousel) => {
-  const track = carousel.querySelector('.carousel-track');
-  const slides = Array.from(track.children);
-  const nextButton = carousel.querySelector('.carousel-button-right');
-  const prevButton = carousel.querySelector('.carousel-button-left');
-  const slideWidth = slides[0].getBoundingClientRect().width;
-
-  // Coloca las diapositivas una al lado de la otra
-  const setSlidePosition = (slide, index) => {
-    slide.style.left = slideWidth * index + 'px';
-  };
-  slides.forEach(setSlidePosition);
-
-  const moveToSlide = (track, currentSlide, targetSlide) => {
-    track.style.transform = 'translateX(-' + targetSlide.style.left + ')';
-    currentSlide.classList.remove('current-slide');
-    targetSlide.classList.add('current-slide');
-  };
-
-  // Botón siguiente
-  nextButton.addEventListener('click', () => {
-    const currentSlide = track.querySelector('.current-slide');
-    const nextSlide = currentSlide.nextElementSibling;
-    if (nextSlide) {
-      moveToSlide(track, currentSlide, nextSlide);
-    }
-  });
-
-  // Botón anterior
-  prevButton.addEventListener('click', () => {
-    const currentSlide = track.querySelector('.current-slide');
-    const prevSlide = currentSlide.previousElementSibling;
-    if (prevSlide) {
-      moveToSlide(track, currentSlide, prevSlide);
-    }
-  });
-});
